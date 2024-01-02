@@ -1,0 +1,22 @@
+# CMake build directory
+build/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+
+# CMake toolchain files
+CMakeScripts/
+CMakeLists.txt.user
+
+# CMake package files
+*.cmake
+*.cmake.in
+
+*.o
+*.a
+*.so
+
+.vscode/
