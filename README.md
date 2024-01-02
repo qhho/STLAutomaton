@@ -19,6 +19,8 @@ There are some limitations in the implementation:
 
 ## Usage
 
-cmake .
-make
-./main.a
+Run `cmake .`
+
+Run `make`
+
+Run `./main.a`
