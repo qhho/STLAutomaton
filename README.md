@@ -2,6 +2,9 @@
 
 This repository provides functionality to convert simple STL formulas into timed automata structures.
 
+# Dependencies
+- OMPL
+
 ## Functionality
 
 The STLAutomaton library includes the following main functions:
@@ -19,6 +22,8 @@ There are some limitations in the implementation:
 
 ## Usage
 
-cmake .
-make
-./main.a
+Run `cmake .`
+
+Run `make`
+
+Run `./main.a`
