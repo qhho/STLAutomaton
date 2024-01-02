@@ -217,8 +217,6 @@ unsigned int ompl::control::Automaton::distFromAccepting(unsigned int s) const
 ompl::control::AutomatonPtr ompl::control::Automaton::NodeEventually(AutomatonPtr phi, unsigned int numProps, std::vector<int> props, bool final_accepting,
                                                                         double lowerbound, double upperbound)
 {
-
-    // phi->addState(false, lowerbound, upperbound);
     int numPrevStates = phi->numStates();
     int num_new_states = 1 << props.size();
 
@@ -293,12 +291,6 @@ ompl::control::AutomatonPtr ompl::control::Automaton::NodeGlobally(AutomatonPtr 
 ompl::control::AutomatonPtr ompl::control::Automaton::NodeEventuallyGlobally(AutomatonPtr phi, unsigned int numProps, std::vector<int> props_eventually, std::vector<int> props_globally, bool final_accepting,
                                                                         const double lowerbound, double upperbound)
 {
-
-
-    //TODO: fix shifting of bitshift
-
-    // phi->addState(false, lowerbound, upperbound);
-    
     int numPrevStates = phi->numStates();
 
     int num_new_states = 1 << props_eventually.size();
